@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bella Sera Trattoria — Jackson, NJ (Sample Site by Nova Local)</title>
+<meta name="description" content="Sample restaurant website by Nova Local — this is what your restaurant's site could look like.">
+<style>
+  :root { --cream:#FBF7EF; --ink:#2A2119; --wine:#7A2E2E; --wine-dark:#5C1F1F; --gold:#B98A2F; --line:#E7DFD1; --muted:#7A6E5E; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family: Charter, Georgia, serif; background: var(--cream); color: var(--ink); line-height: 1.6; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  .demo-band { background: #14273A; color:#fff; font-family:'Avenir Next','Helvetica Neue',Arial,sans-serif; font-size: 13.5px; text-align:center; padding: 8px 14px; }
+  .demo-band a { color:#7FD4A8; font-weight:600; }
+  header { background: var(--wine); color: #fff; text-align: center; padding: 54px 20px 46px; }
+  header .tag { font-family:'Avenir Next','Helvetica Neue',Arial,sans-serif; text-transform: uppercase; letter-spacing: .3em; font-size: 12px; color:#E9C9C9; }
+  h1 { font-size: clamp(34px, 6vw, 54px); font-weight: 500; letter-spacing:.01em; margin: 8px 0 4px; }
+  header p { color:#F0DDDD; font-style: italic; }
+  .callbar { background: var(--wine-dark); padding: 14px; text-align:center; font-family:'Avenir Next','Helvetica Neue',Arial,sans-serif; }
+  .callbar a { color:#fff; text-decoration:none; font-weight:700; font-size:17px; background:var(--gold); padding: 10px 22px; border-radius: 6px; display:inline-block; margin: 4px 8px; }
+  .callbar a.alt { background:transparent; border:1.5px solid #A9807F; font-weight:600; }
+  section { padding: 44px 0; }
+  h2 { font-size: 26px; text-align:center; color: var(--wine); font-weight:600; }
+  .rule { width: 54px; height: 2px; background: var(--gold); margin: 10px auto 26px; }
+  .menu { max-width: 640px; margin: 0 auto; }
+  .mcat { font-family:'Avenir Next','Helvetica Neue',Arial,sans-serif; text-transform:uppercase; letter-spacing:.18em; font-size:13px; font-weight:700; color:var(--gold); margin: 26px 0 10px; text-align:center; }
+  .item { display:flex; justify-content:space-between; gap: 16px; padding: 8px 0; border-bottom: 1px dotted var(--line); }
+  .item b { font-weight: 600; }
+  .item small { display:block; color: var(--muted); font-size: 14px; }
+  .item .p { font-family:'Avenir Next','Helvetica Neue',Arial,sans-serif; font-weight:600; white-space:nowrap; }
+  .info { background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap: 26px; text-align:center; font-family:'Avenir Next','Helvetica Neue',Arial,sans-serif; }
+  .grid h3 { color: var(--wine); font-size: 15px; text-transform: uppercase; letter-spacing:.12em; margin-bottom: 8px; }
+  .grid p { font-size: 15.5px; }
+  footer { background: var(--wine); color:#E9C9C9; text-align:center; padding: 26px 20px; font-size: 14px; }
+  footer a { color: #fff; }
+</style>
+</head>
+<body>
+<div class="demo-band">SAMPLE SITE — this restaurant is fictional. Your restaurant could look like this by Friday. <a href="../">← Nova Local</a></div>
+
+<header>
+  <div class="tag">Est. 1987 · Jackson, New Jersey</div>
+  <h1>Bella Sera Trattoria</h1>
+  <p>Family recipes from Campania, made the slow way.</p>
+</header>
+
+<div class="callbar">
+  <a href="tel:+17325550100">☎ Call to order: (732) 555-0100</a>
+  <a class="alt" href="#hours">Hours &amp; directions</a>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>The Menu</h2>
+    <div class="rule"></div>
+    <div class="menu">
+      <div class="mcat">Antipasti</div>
+      <div class="item"><span><b>Arancini di Nonna</b><small>crispy risotto balls, sunday gravy, basil</small></span><span class="p">$12</span></div>
+      <div class="item"><span><b>Burrata &amp; Prosciutto</b><small>local tomatoes, aged balsamic, grilled bread</small></span><span class="p">$16</span></div>
+      <div class="mcat">Pasta</div>
+      <div class="item"><span><b>Rigatoni alla Vodka</b><small>the one people drive from Trenton for</small></span><span class="p">$19</span></div>
+      <div class="item"><span><b>Linguine Vongole</b><small>Barnegat Bay clams, white wine, garlic</small></span><span class="p">$24</span></div>
+      <div class="item"><span><b>Lasagna della Casa</b><small>sunday-only, until it's gone</small></span><span class="p">$21</span></div>
+      <div class="mcat">Secondi</div>
+      <div class="item"><span><b>Chicken Parmigiana</b><small>hand-breaded, fresh mozzarella, spaghetti</small></span><span class="p">$23</span></div>
+      <div class="item"><span><b>Branzino al Limone</b><small>whole roasted, charred lemon, herbs</small></span><span class="p">$29</span></div>
+      <div class="mcat">Dolci</div>
+      <div class="item"><span><b>Tiramisu</b><small>made this morning</small></span><span class="p">$9</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="hours">
+  <div class="wrap">
+    <h2>Find Us</h2>
+    <div class="rule"></div>
+    <div class="grid">
+      <div><h3>Hours</h3><p>Tue–Thu 4–9 PM<br>Fri–Sat 12–10 PM<br>Sun 12–8 PM<br>Closed Mondays</p></div>
+      <div><h3>Location</h3><p>123 Countyline Road<br>Jackson, NJ 08527<br><a href="https://maps.google.com/?q=Jackson+NJ" style="color:var(--wine)">Get directions →</a></p></div>
+      <div><h3>Order &amp; Reserve</h3><p>Call (732) 555-0100<br>Takeout · Catering<br>Parties up to 40</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Bella Sera Trattoria · Jackson, NJ<br>
+  Sample website by <a href="../">Nova Local</a> — want one like it for your restaurant? $299, live in 5 days.
+</footer>
+</body>
+</html>

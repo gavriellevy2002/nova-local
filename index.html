@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nova Local — Your phone answered. Your business online.</title>
+<meta name="description" content="AI phone receptionist and websites for local New Jersey businesses. Never miss another call. Never lose a customer who couldn't find your menu.">
+<style>
+  :root {
+    --navy: #14273A; --paper: #FAF9F5; --ink: #1D2733; --muted: #5E6B77;
+    --green: #1E7A52; --green-soft: #E4F1EA; --line: #E2E0D8; --gold: #C9962E;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: 'Avenir Next', 'Helvetica Neue', Arial, sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 22px; }
+  header { background: var(--navy); color: #fff; padding: 18px 0; }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-weight: 700; font-size: 20px; letter-spacing: .02em; }
+  .logo span { color: #7FD4A8; }
+  header a.cta { background: var(--green); color: #fff; text-decoration: none; padding: 9px 18px; border-radius: 6px; font-weight: 600; font-size: 15px; }
+  .hero { background: var(--navy); color: #fff; padding: 56px 0 72px; }
+  .hero h1 { font-size: clamp(30px, 5.5vw, 48px); line-height: 1.12; max-width: 17ch; }
+  .hero h1 em { font-style: normal; color: #7FD4A8; }
+  .hero p { margin-top: 16px; max-width: 52ch; font-size: 18px; color: #C8D4DE; }
+  .hero .btns { margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn { display: inline-block; text-decoration: none; padding: 13px 24px; border-radius: 8px; font-weight: 700; font-size: 16px; }
+  .btn-green { background: var(--green); color: #fff; }
+  .btn-ghost { border: 2px solid #46586B; color: #fff; }
+  section { padding: 56px 0; }
+  h2 { font-size: 28px; margin-bottom: 8px; }
+  .kicker { text-transform: uppercase; letter-spacing: .14em; font-size: 12px; font-weight: 700; color: var(--green); }
+  .sub { color: var(--muted); max-width: 60ch; margin-bottom: 30px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 26px; display: flex; flex-direction: column; }
+  .card h3 { font-size: 20px; }
+  .price { font-size: 34px; font-weight: 700; margin: 10px 0 2px; }
+  .price small { font-size: 15px; font-weight: 500; color: var(--muted); }
+  .setup { color: var(--muted); font-size: 14px; margin-bottom: 14px; }
+  .card ul { padding-left: 20px; margin: 10px 0 20px; color: #37424E; font-size: 15px; }
+  .card ul li { margin: 6px 0; }
+  .card .btn { margin-top: auto; text-align: center; }
+  .best { border: 2px solid var(--green); position: relative; }
+  .best::before { content: "MOST POPULAR"; position: absolute; top: -11px; left: 22px; background: var(--green); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .1em; padding: 2px 10px; border-radius: 99px; }
+  .story { background: var(--green-soft); }
+  .story blockquote { font-size: 20px; max-width: 56ch; font-family: Charter, Georgia, serif; }
+  .story cite { display: block; margin-top: 14px; font-style: normal; color: var(--muted); font-size: 15px; }
+  .steps { counter-reset: n; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; list-style: none; padding: 0; }
+  .steps li { counter-increment: n; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+  .steps li::before { content: counter(n); display: inline-flex; width: 32px; height: 32px; align-items: center; justify-content: center; background: var(--navy); color: #fff; border-radius: 50%; font-weight: 700; margin-bottom: 10px; }
+  .steps b { display: block; margin-bottom: 4px; }
+  .steps small { color: var(--muted); }
+  footer { background: var(--navy); color: #A8B8C6; padding: 34px 0; font-size: 14px; }
+  footer a { color: #7FD4A8; }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="logo">Nova<span>Local</span></div>
+    <a class="cta" href="mailto:gavriellevy2002@gmail.com?subject=Nova%20Local%20—%20I%27m%20interested">Get in touch</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Your phone <em>answered</em>.<br>Your business <em>online</em>.</h1>
+    <p>We're a Jackson, NJ company that does two things for local businesses: an AI receptionist that picks up every call you can't — nights, weekends, mid-job — and a clean website for businesses that don't have one. No contracts. Cancel anytime.</p>
+    <div class="btns">
+      <a class="btn btn-green" href="#pricing">See pricing</a>
+      <a class="btn btn-ghost" href="demo/">See a sample website</a>
+    </div>
+  </div>
+</div>
+
+<section id="phone">
+  <div class="wrap">
+    <div class="kicker">Service one</div>
+    <h2>The receptionist that never sleeps</h2>
+    <p class="sub">62% of calls to small businesses go unanswered — and 85% of those callers never call back. They just call your competitor. Our AI answers instantly, sounds natural, calms the customer, books the job, and texts you the details. You get the work; you never touched the phone.</p>
+  </div>
+</section>
+
+<section class="story" style="padding: 40px 0;">
+  <div class="wrap">
+    <blockquote>"9:40 PM — a homeowner's pipe bursts. Your phone is off. Our receptionist answers on the first ring, walks them to the shutoff valve, books your morning emergency slot, and texts you the address. You wake up to a $4,000 job you would have slept through."</blockquote>
+    <cite>— an actual test call transcript, unedited. Ask us to hear it.</cite>
+  </div>
+</section>
+
+<section id="web">
+  <div class="wrap">
+    <div class="kicker">Service two</div>
+    <h2>A real website, finally</h2>
+    <p class="sub">If your business runs on a Facebook page, half your customers can't find your menu, your hours, or your phone number. We build you a fast, clean site — menu, photos, hours, click-to-call, Google Maps — and we keep it updated for you. You never touch it. See our <a href="demo/">sample restaurant site</a>.</p>
+  </div>
+</section>
+
+<section id="pricing" style="background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="kicker">Simple pricing</div>
+    <h2>Pick one, or take the desk</h2>
+    <p class="sub">Founding-client prices — locked in for life for our first ten businesses. No contracts, no cancellation fees, every plan month-to-month.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>The Website</h3>
+        <div class="price">$299 <small>build</small></div>
+        <div class="setup">then $39/month care</div>
+        <ul>
+          <li>Custom site with menu / services, photos, hours</li>
+          <li>Click-to-call &amp; directions built in</li>
+          <li>Google Business profile set up properly</li>
+          <li>Unlimited menu &amp; price updates — text us, it's done</li>
+          <li>Hosting, domain help &amp; security included</li>
+        </ul>
+        <a class="btn btn-green" href="mailto:gavriellevy2002@gmail.com?subject=Website%20—%20Nova%20Local">Start my website</a>
+      </div>
+      <div class="card">
+        <h3>The Receptionist</h3>
+        <div class="price">$249<small>/month</small></div>
+        <div class="setup">30-day free pilot for founding clients</div>
+        <ul>
+          <li>Every missed call answered in one ring, 24/7</li>
+          <li>Books appointments straight into your calendar</li>
+          <li>Instant text to you with every caller's details</li>
+          <li>Trained on YOUR business, prices &amp; service area</li>
+          <li>You listen to any call recording, any time</li>
+        </ul>
+        <a class="btn btn-green" href="mailto:gavriellevy2002@gmail.com?subject=Receptionist%20—%20Nova%20Local">Try it free</a>
+      </div>
+      <div class="card best">
+        <h3>The Full Front Desk</h3>
+        <div class="price">$269<small>/month</small></div>
+        <div class="setup">website build included FREE ($299 value)</div>
+        <ul>
+          <li>Everything in The Receptionist</li>
+          <li>Everything in The Website — build fee waived</li>
+          <li>One number, one bill, one text away</li>
+          <li>Priority support from a real local team</li>
+        </ul>
+        <a class="btn btn-green" href="mailto:gavriellevy2002@gmail.com?subject=Full%20Front%20Desk%20—%20Nova%20Local">Take the desk</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">How it works</div>
+    <h2>Live this week, not this quarter</h2>
+    <ol class="steps" style="margin-top:26px">
+      <li><b>15-minute call</b><small>Tell us how you work — services, prices, service area, how you like jobs booked.</small></li>
+      <li><b>We build everything</b><small>Site drafted and receptionist trained within 5 days. You review, we adjust.</small></li>
+      <li><b>Go live</b><small>Your calls forward when you don't pick up. Your site goes online. You get a text for every lead.</small></li>
+      <li><b>We keep running it</b><small>Menu changes, price updates, call monitoring — handled. You run your business.</small></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b style="color:#fff">Nova Local</b> · Jackson, New Jersey<br>
+    <a href="mailto:gavriellevy2002@gmail.com">gavriellevy2002@gmail.com</a><br><br>
+    Straight answers to fair questions: our receptionist is an AI assistant (that's how it answers at 3 AM), and it will say so if a caller asks. Your customers get helped either way — that's the point.
+  </div>
+</footer>
+</body>
+</html>

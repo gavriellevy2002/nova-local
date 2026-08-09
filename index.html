@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nova Local — Your phone answered. Your business online.</title>
-<meta name="description" content="AI phone receptionist and websites for local New Jersey businesses. Never miss another call. Never lose a customer who couldn't find your menu.">
+<title>The Front Desk — Your phone answered. Your business online.</title>
+<meta name="description" content="An AI receptionist that answers every call your busy shop can't, plus a clean website for businesses still on Facebook. Built in Jackson, NJ. No contracts.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -20,7 +20,6 @@
   h1,h2,h3,.price { font-family:'Fraunces',Georgia,serif; }
   .wrap { max-width:1040px; margin:0 auto; padding:0 24px; }
 
-  /* nav */
   nav { position:sticky; top:0; z-index:50; background:rgba(14,31,48,.86); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); }
   nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
   .logo { color:#fff; font-weight:800; font-size:19px; letter-spacing:-.01em; text-decoration:none; }
@@ -32,7 +31,6 @@
   nav .links a.cta:hover { background:var(--green-br); transform:translateY(-1px); }
   @media (max-width:640px){ nav .links a:not(.cta){ display:none; } }
 
-  /* hero */
   .hero { background:radial-gradient(1200px 600px at 80% -10%, #1E4368 0%, var(--navy) 55%); color:#fff; overflow:hidden; }
   .hero .wrap { display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center; padding-top:84px; padding-bottom:96px; }
   @media (max-width:840px){ .hero .wrap { grid-template-columns:1fr; padding-top:56px; } }
@@ -47,7 +45,6 @@
   .btn-ghost:hover { border-color:#7FA3C4; transform:translateY(-2px); }
   .trust { margin-top:26px; font-size:13.5px; color:#8FA5B8; }
 
-  /* phone mockup */
   .phone { width:300px; max-width:86vw; margin:0 auto; background:#0B1622; border:1px solid #24405C; border-radius:36px; padding:18px 14px 22px; box-shadow:0 30px 80px rgba(0,0,0,.45), 0 0 0 6px rgba(255,255,255,.03); }
   .phone .notch { width:90px; height:5px; background:#24405C; border-radius:99px; margin:0 auto 14px; }
   .phone .pstatus { text-align:center; font-size:12px; color:#7B93A9; margin-bottom:12px; }
@@ -65,13 +62,19 @@
   @keyframes pop { to { opacity:1; transform:translateY(0); } }
   @media (prefers-reduced-motion:reduce){ .bubble{ opacity:1; transform:none; animation:none !important; } }
 
-  /* stats band */
+  /* hear-it-live band */
+  .live { background:var(--gold); color:#3A2A08; }
+  .live .wrap { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px; padding-top:26px; padding-bottom:26px; }
+  .live h3 { font-size:clamp(20px,2.6vw,26px); color:#2A1E05; }
+  .live p { font-size:15px; color:#5A461A; margin-top:2px; }
+  .live a { background:#2A1E05; color:#fff; text-decoration:none; font-weight:800; font-size:18px; padding:14px 26px; border-radius:10px; white-space:nowrap; transition:transform .2s; }
+  .live a:hover { transform:translateY(-2px); }
+
   .stats { background:var(--navy2); color:#fff; }
   .stats .wrap { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:24px; padding-top:34px; padding-bottom:34px; text-align:center; }
   .stats b { font-family:'Fraunces',serif; font-size:36px; color:var(--green-br); display:block; line-height:1.1; }
   .stats span { font-size:13.5px; color:#A9BCCC; }
 
-  /* sections */
   section { padding:84px 0; }
   .kicker { text-transform:uppercase; letter-spacing:.16em; font-size:12px; font-weight:800; color:var(--green); }
   h2 { font-size:clamp(28px,3.6vw,40px); line-height:1.15; margin:10px 0 14px; letter-spacing:-.01em; }
@@ -82,7 +85,6 @@
   .featlist li { padding:10px 0 10px 34px; position:relative; font-size:15.5px; }
   .featlist li::before { content:"✓"; position:absolute; left:0; top:8px; width:22px; height:22px; border-radius:50%; background:var(--green-soft); color:var(--green); font-weight:800; font-size:13px; display:flex; align-items:center; justify-content:center; }
 
-  /* browser mockup */
   .browser { border-radius:12px; overflow:hidden; box-shadow:0 24px 60px rgba(20,35,50,.18); border:1px solid var(--line); transition:transform .35s; }
   .browser:hover { transform:translateY(-6px); }
   .browser .bar { background:#E9E7E0; padding:9px 12px; display:flex; gap:6px; align-items:center; }
@@ -92,8 +94,15 @@
   .browser iframe { width:100%; height:380px; border:0; display:block; pointer-events:none; }
   .browser a.overlay { display:block; text-align:center; padding:12px; background:var(--navy); color:#fff; text-decoration:none; font-weight:600; font-size:14.5px; }
 
-  /* pricing */
-  .pricing { background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  /* founder */
+  .founder { background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .founder .wrap { display:grid; grid-template-columns:auto 1fr; gap:32px; align-items:center; }
+  @media (max-width:640px){ .founder .wrap { grid-template-columns:1fr; text-align:center; } }
+  .founder .avatar { width:120px; height:120px; border-radius:50%; background:linear-gradient(135deg,var(--green),var(--navy2)); display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:46px; color:#fff; font-weight:700; margin:0 auto; }
+  .founder blockquote { font-family:'Fraunces',serif; font-size:clamp(20px,2.6vw,26px); line-height:1.4; color:var(--ink); }
+  .founder .who { margin-top:14px; font-size:15px; color:var(--muted); font-weight:600; font-family:'Inter'; }
+
+  .pricing { background:var(--paper); }
   .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px; margin-top:40px; }
   .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:30px 28px; display:flex; flex-direction:column; transition:transform .3s, box-shadow .3s; }
   .card:hover { transform:translateY(-6px); box-shadow:0 20px 50px rgba(20,35,50,.12); }
@@ -107,8 +116,9 @@
   .card .btn { margin-top:auto; text-align:center; }
   .best { border:2px solid var(--green); position:relative; background:linear-gradient(180deg,#FDFFFE, #F2FAF6); }
   .best::before { content:"MOST POPULAR"; position:absolute; top:-12px; left:26px; background:var(--green); color:#fff; font-size:11px; font-weight:800; letter-spacing:.1em; padding:3px 12px; border-radius:99px; }
+  .guarantee { margin-top:30px; text-align:center; font-size:15px; color:var(--muted); }
+  .guarantee b { color:var(--ink); }
 
-  /* steps */
   .steps { counter-reset:n; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; list-style:none; padding:0; margin-top:38px; }
   .steps li { counter-increment:n; background:#fff; border:1px solid var(--line); border-radius:14px; padding:26px 24px; transition:transform .3s; }
   .steps li:hover { transform:translateY(-4px); }
@@ -116,14 +126,12 @@
   .steps b { display:block; margin-bottom:5px; font-size:16px; }
   .steps small { color:var(--muted); font-size:14px; }
 
-  /* faq */
   details { background:#fff; border:1px solid var(--line); border-radius:12px; padding:18px 22px; margin:12px 0; max-width:720px; }
   summary { cursor:pointer; font-weight:700; font-size:16px; list-style:none; display:flex; justify-content:space-between; align-items:center; }
   summary::after { content:"+"; font-size:22px; color:var(--green); transition:transform .25s; }
   details[open] summary::after { transform:rotate(45deg); }
   details p { margin-top:10px; color:#3A4754; font-size:15px; max-width:60ch; }
 
-  /* final cta */
   .final { background:radial-gradient(900px 500px at 50% 120%, #1E4368 0%, var(--navy) 60%); color:#fff; text-align:center; }
   .final h2 { color:#fff; }
   .final .sub { margin:0 auto; color:#B9C7D4; }
@@ -132,7 +140,6 @@
   footer a { color:var(--green-br); }
   footer .honest { margin-top:12px; font-size:13px; color:#6E8296; max-width:70ch; }
 
-  /* scroll reveal */
   .rv { opacity:0; transform:translateY(26px); transition:opacity .7s ease, transform .7s ease; }
   .rv.on { opacity:1; transform:none; }
   @media (prefers-reduced-motion:reduce){ .rv { opacity:1; transform:none; transition:none; } }
@@ -143,13 +150,13 @@
 
 <nav>
   <div class="wrap">
-    <a class="logo" href="#">Nova<span>Local</span></a>
+    <a class="logo" href="#">The Front<span>Desk</span></a>
     <div class="links">
       <a href="#phone">Receptionist</a>
       <a href="#web">Websites</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
-      <a class="cta" href="mailto:gavriellevy2002@gmail.com?subject=Nova%20Local%20—%20I%27m%20interested">Get in touch</a>
+      <a class="cta" href="mailto:gavriellevy2002@gmail.com?subject=The%20Front%20Desk%20%E2%80%94%20I%27m%20interested">Get in touch</a>
     </div>
   </div>
 </nav>
@@ -158,33 +165,42 @@
   <div class="wrap">
     <div>
       <h1>Your phone <em>answered</em>.<br>Your business <em>online</em>.</h1>
-      <p class="lead">We do two things for local New Jersey businesses, and we do them extremely well: an AI receptionist that picks up every call you can't — nights, weekends, mid-job — and a beautiful website for businesses still running on a Facebook page.</p>
+      <p class="lead">We do two things for local New Jersey shops, and we do them extremely well: an AI receptionist that picks up every call your team can't — the dinner rush, nights, weekends — and a clean website for businesses still living on a Facebook page.</p>
       <div class="btns">
         <a class="btn btn-green" href="#pricing">See pricing</a>
-        <a class="btn btn-ghost" href="demo/">See a sample website</a>
+        <a class="btn btn-ghost" href="#live">Hear it answer a call</a>
       </div>
-      <div class="trust">Jackson, NJ · Month-to-month · No contracts · Founding-client pricing locked for life</div>
+      <div class="trust">Built in Jackson, NJ · Month-to-month · No contracts · First month free for founding shops</div>
     </div>
-    <div class="phone" id="phoneDemo" aria-label="Demo of the AI receptionist handling a late-night emergency call">
+    <div class="phone" id="phoneDemo" aria-label="Demo of the AI receptionist taking a reservation during the dinner rush">
       <div class="notch"></div>
-      <div class="pstatus"><b>Joe's Plumbing</b>9:40 PM — Joe is asleep. His phone isn't.</div>
+      <div class="pstatus"><b>Tony's Pizzeria</b>Friday 7:14 PM — the rush. Nobody can grab the phone.</div>
       <div class="chat">
         <div class="bubble sys">Incoming call · answered in 1 ring</div>
-        <div class="bubble caller">My basement pipe just burst — there's water everywhere, I don't know what to do!</div>
-        <div class="bubble nova">I've got you — take a breath. First: find your main shutoff valve, usually by the water meter, and turn it off. That stops the flooding.</div>
-        <div class="bubble caller">Okay… turning it now — it's off!</div>
-        <div class="bubble nova">Perfect, that was the big one. I'm booking you our 7 AM emergency slot. Can I get your name and address?</div>
-        <div class="bubble caller">Dana Cohen, 14 Birchwood Court, Toms River.</div>
-        <div class="bubble sys">✓ Booked · Joe woke up to a $4,000 job</div>
+        <div class="bubble caller">Hi — do you have a table for 6 tonight, around 8?</div>
+        <div class="bubble nova">We do! I can hold a table for 6 at 8:00. Can I get a name and a good number for the reservation?</div>
+        <div class="bubble caller">Marissa — 732-555-0119.</div>
+        <div class="bubble nova">You're all set, Marissa — table for 6 at 8 tonight. We'll see you soon!</div>
+        <div class="bubble sys">✓ Booked · Tony was at the oven. He never touched the phone.</div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="live" id="live">
+  <div class="wrap rv">
+    <div>
+      <h3>Don't take our word for it — hear it yourself.</h3>
+      <p>Call our receptionist right now. Ask it anything. That's exactly what your customers will hear.</p>
+    </div>
+    <a href="tel:+17326609677">📞 Call (732) 660-9677</a>
   </div>
 </div>
 
 <div class="stats">
   <div class="wrap">
     <div class="rv"><b>62%</b><span>of calls to small businesses go unanswered</span></div>
-    <div class="rv"><b>85%</b><span>of missed callers never call back — they call your competitor</span></div>
+    <div class="rv"><b>85%</b><span>of missed callers never call back — they call the shop down the street</span></div>
     <div class="rv"><b>1 ring</b><span>how fast we answer, 24 hours a day, 365 days a year</span></div>
     <div class="rv"><b>5 days</b><span>from our first chat to everything live</span></div>
   </div>
@@ -195,26 +211,25 @@
     <div class="rv">
       <div class="kicker">Service one — the receptionist</div>
       <h2>Every missed call is a customer you already paid to attract</h2>
-      <p class="sub">You're on a ladder. You're elbow-deep in a job. It's 9 PM. The phone rings — and that caller is worth hundreds or thousands. Our AI receptionist answers instantly, sounds natural, knows your business, and does something no answering machine ever did: it finishes the job.</p>
+      <p class="sub">It's the Friday rush. The phone rings — a party of six, a big takeout order, a customer ready to spend. Everyone's slammed, so it rings out, and that order goes to whoever picks up next. Our AI answers instantly, sounds natural, knows your menu and hours, and does the thing an answering machine never could: it finishes the job.</p>
       <ul class="featlist">
-        <li>Answers in one ring, 24/7 — nights, weekends, holidays</li>
-        <li>Books appointments straight into your calendar</li>
-        <li>Texts you every caller's name, number and need — instantly</li>
-        <li>Trained on <em>your</em> services, prices and service area</li>
+        <li>Answers in one ring, 24/7 — the rush, nights, weekends, holidays</li>
+        <li>Takes reservations and orders, books them into your calendar</li>
+        <li>Texts you every caller's name, number and request — instantly</li>
+        <li>Trained on <em>your</em> menu, prices, hours and specials</li>
         <li>Every call recorded and readable — you check any of them, any time</li>
       </ul>
     </div>
     <div class="rv" aria-hidden="true" style="text-align:center; font-size:15px; color:var(--muted)">
       <div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px; box-shadow:0 18px 44px rgba(20,35,50,.1)">
         <div style="font-size:44px">📲</div>
-        <p style="font-weight:700;color:var(--ink);font-size:17px;margin-top:6px">The text Joe woke up to:</p>
+        <p style="font-weight:700;color:var(--ink);font-size:17px;margin-top:6px">The text Tony got, mid-rush:</p>
         <div style="text-align:left;background:var(--green-soft);border-radius:12px;padding:14px 16px;margin-top:14px;font-size:14px;color:#14503A">
-          <b>EMERGENCY BOOKED — 9:47 PM</b><br>
-          Dana Cohen · burst pipe, water shut off ✓<br>
-          14 Birchwood Ct, Toms River<br>
-          732-555-0148 · promised 7 AM slot
+          <b>NEW RESERVATION — 7:15 PM</b><br>
+          Marissa · party of 6 · tonight 8:00 PM<br>
+          732-555-0119 · confirmed ✓
         </div>
-        <p style="margin-top:14px;font-size:13.5px">That's the whole product. You get the job.<br>You never touched the phone.</p>
+        <p style="margin-top:14px;font-size:13.5px">That's the whole product. You get the booking.<br>You never left the kitchen.</p>
       </div>
     </div>
   </div>
@@ -235,9 +250,19 @@
         <li>Menu / services, photos, hours, directions — done properly</li>
         <li>Click-to-call and Google Maps built in</li>
         <li>Google Business profile set up and connected</li>
-        <li>Unlimited updates: text us the new price, it's live in hours</li>
+        <li>Unlimited updates: text us the new price, it's live the same day</li>
         <li>Hosting, domain and security — all handled, all included</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<section class="founder">
+  <div class="wrap rv">
+    <div class="avatar">G</div>
+    <div>
+      <blockquote>"I started The Front Desk here in Jackson because I kept watching good local shops lose customers to a phone nobody could get to. You shouldn't lose a $200 order because you were busy earning it. So I built the thing I'd want answering my own phone — and I'm a real person you can call, not a call center three states away."</blockquote>
+      <div class="who">— Gavriel, founder · Jackson, NJ · answering for shops across Ocean &amp; Monmouth County</div>
     </div>
   </div>
 </section>
@@ -247,7 +272,7 @@
     <div style="text-align:center" class="rv">
       <div class="kicker">Simple pricing</div>
       <h2>Pick one — or take the whole front desk</h2>
-      <p class="sub" style="margin:0 auto">Founding-client prices, locked in for life for our first ten businesses. Everything month-to-month. Cancel anytime, keep your website.</p>
+      <p class="sub" style="margin:0 auto">Founding-shop prices, locked in for life for our first ten businesses. Everything month-to-month. Cancel anytime, keep your website.</p>
     </div>
     <div class="cards">
       <div class="card rv">
@@ -261,20 +286,20 @@
           <li>Unlimited updates — text us, it's live</li>
           <li>Hosting, domain help &amp; security included</li>
         </ul>
-        <a class="btn btn-green" href="mailto:gavriellevy2002@gmail.com?subject=Website%20—%20Nova%20Local">Start my website</a>
+        <a class="btn btn-green" href="mailto:gavriellevy2002@gmail.com?subject=Website%20%E2%80%94%20The%20Front%20Desk">Start my website</a>
       </div>
       <div class="card rv">
         <h3>The Receptionist</h3>
         <div class="price">$249<small>/month</small></div>
-        <div class="setup">30-day free pilot for founding clients</div>
+        <div class="setup">first month free for founding shops</div>
         <ul>
           <li>Every missed call answered in one ring, 24/7</li>
-          <li>Appointments booked into your calendar</li>
+          <li>Reservations &amp; orders booked into your calendar</li>
           <li>Instant text with every caller's details</li>
-          <li>Trained on your business &amp; prices</li>
+          <li>Trained on your menu &amp; prices</li>
           <li>Full call transcripts, any time</li>
         </ul>
-        <a class="btn btn-green" href="mailto:gavriellevy2002@gmail.com?subject=Receptionist%20—%20Nova%20Local">Try it free</a>
+        <a class="btn btn-green" href="mailto:gavriellevy2002@gmail.com?subject=Receptionist%20%E2%80%94%20The%20Front%20Desk">Try it free</a>
       </div>
       <div class="card best rv">
         <h3>The Full Front Desk</h3>
@@ -286,9 +311,10 @@
           <li>One number, one bill, one text away</li>
           <li>Priority support from a real local team</li>
         </ul>
-        <a class="btn btn-green" href="mailto:gavriellevy2002@gmail.com?subject=Full%20Front%20Desk%20—%20Nova%20Local">Take the desk</a>
+        <a class="btn btn-green" href="mailto:gavriellevy2002@gmail.com?subject=Full%20Front%20Desk%20%E2%80%94%20The%20Front%20Desk">Take the desk</a>
       </div>
     </div>
+    <p class="guarantee rv"><b>No contracts. No setup fee. Cancel with one text.</b> One saved order pays for the month — everything after that is profit.</p>
   </div>
 </section>
 
@@ -299,10 +325,10 @@
       <h2>Live this week, not this quarter</h2>
     </div>
     <ol class="steps">
-      <li class="rv"><b>15-minute call</b><small>Tell us how you work — services, prices, service area, how you like jobs booked.</small></li>
+      <li class="rv"><b>15-minute call</b><small>Tell us how you work — menu, prices, hours, how you like bookings handled.</small></li>
       <li class="rv"><b>We build everything</b><small>Site drafted and receptionist trained within 5 days. You review, we adjust until you love it.</small></li>
-      <li class="rv"><b>Go live</b><small>Calls forward when you don't pick up. Your site goes online. Every lead lands in your pocket.</small></li>
-      <li class="rv"><b>We keep running it</b><small>Menu changes, price updates, call monitoring — handled daily. You run your business.</small></li>
+      <li class="rv"><b>Go live</b><small>Calls forward when you don't pick up. Your site goes online. Every booking lands in your pocket.</small></li>
+      <li class="rv"><b>We keep running it</b><small>Menu changes, price updates, call monitoring — handled daily. You run your shop.</small></li>
     </ol>
   </div>
 </section>
@@ -311,11 +337,12 @@
   <div class="wrap">
     <div class="kicker rv">Fair questions</div>
     <h2 class="rv">Asked by every smart owner</h2>
-    <details class="rv"><summary>Will my customers know it's an AI?</summary><p>It sounds natural and most callers just get helped. But if someone asks, it answers honestly — it's your business's AI assistant. In our experience customers care about one thing: someone picked up at 9 PM and solved their problem.</p></details>
+    <details class="rv"><summary>Will my customers know it's an AI?</summary><p>It sounds natural and most callers just get helped. But if someone asks, it answers honestly — it's your shop's AI assistant. In our experience customers care about one thing: someone picked up during the rush and handled it. Being straight about it is exactly why they trust it.</p></details>
     <details class="rv"><summary>What happens on a call it can't handle?</summary><p>It takes the caller's details, tells them you'll call back personally, and texts you immediately marked URGENT. It never guesses, never quotes prices you didn't approve, and never argues with anyone.</p></details>
     <details class="rv"><summary>I already have a Facebook page. Why do I need a site?</summary><p>Facebook shows your page to people who already found you, wrapped in ads for your competitors. A website is yours: your menu, your number, your reviews — first thing on Google when someone nearby searches for what you do.</p></details>
-    <details class="rv"><summary>What if I want to cancel?</summary><p>You cancel. That's the whole process — no contracts, no fees. If you built a website with us, it's yours; we'll help you move it wherever you want.</p></details>
-    <details class="rv"><summary>Who are you?</summary><p>A small team in Jackson, New Jersey, building with the same AI technology the big chains pay six figures for — priced for the businesses we actually live around.</p></details>
+    <details class="rv"><summary>What if I want to cancel?</summary><p>You send one text. That's the whole process — no contracts, no fees, no phone-tree runaround. If you built a website with us, it's yours; we'll help you move it wherever you want.</p></details>
+    <details class="rv"><summary>Who are you?</summary><p>A small team in Jackson, New Jersey, run by a real person you can call — Gavriel. We use the same AI technology the big chains pay six figures for, priced for the shops we actually live around.</p></details>
+    <details class="rv"><summary>How are you different from the big receptionist companies?</summary><p>They run from a call center three states away, lock you into contracts, and take weeks to set up. We're local, month-to-month, live in days, and we're the only ones who do your phone <em>and</em> your website together — for less.</p></details>
   </div>
 </section>
 
@@ -324,14 +351,14 @@
     <h2>The next call you miss is going to your competitor.</h2>
     <p class="sub">Email us today — we'll reply the same day, and you can be live inside a week.</p>
     <div class="btns" style="justify-content:center">
-      <a class="btn btn-green" href="mailto:gavriellevy2002@gmail.com?subject=Nova%20Local%20—%20let%27s%20talk">Email us now</a>
+      <a class="btn btn-green" href="mailto:gavriellevy2002@gmail.com?subject=The%20Front%20Desk%20%E2%80%94%20let%27s%20talk">Email us now</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <b style="color:#fff">Nova Local</b> · Jackson, New Jersey · <a href="mailto:gavriellevy2002@gmail.com">gavriellevy2002@gmail.com</a>
+    <b style="color:#fff">The Front Desk</b> · Jackson, New Jersey · <a href="mailto:gavriellevy2002@gmail.com">gavriellevy2002@gmail.com</a>
     <p class="honest">Straight answers to fair questions: our receptionist is an AI assistant — that's how it can answer at 3 AM — and it says so if a caller asks. Your customers get helped either way. That's the point.</p>
   </div>
 </footer>
